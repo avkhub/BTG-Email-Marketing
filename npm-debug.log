@@ -1,0 +1,68 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'angular-jwtclear' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.38
+4 verbose node symlink /usr/bin/node
+5 warn package.json angular-jwt@0.0.9 No repository field.
+6 verbose cache add [ 'angular-jwtclear', null ]
+7 verbose cache add name=undefined spec="angular-jwtclear" args=["angular-jwtclear",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'angular-jwtclear',
+8 verbose parsed url   path: 'angular-jwtclear',
+8 verbose parsed url   href: 'angular-jwtclear' }
+9 silly lockFile 7efbc5b6-angular-jwtclear angular-jwtclear
+10 verbose lock angular-jwtclear /home/aditya/.npm/7efbc5b6-angular-jwtclear.lock
+11 silly lockFile 7efbc5b6-angular-jwtclear angular-jwtclear
+12 silly lockFile 7efbc5b6-angular-jwtclear angular-jwtclear
+13 verbose addNamed [ 'angular-jwtclear', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 6dfb62bd-angular-jwtclear angular-jwtclear@
+16 verbose lock angular-jwtclear@ /home/aditya/.npm/6dfb62bd-angular-jwtclear.lock
+17 silly addNameRange { name: 'angular-jwtclear', range: '*', hasData: false }
+18 verbose request where is /angular-jwtclear
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id c5730040121bfa4f
+21 verbose url raw /angular-jwtclear
+22 verbose url resolving [ 'https://registry.npmjs.org/', './angular-jwtclear' ]
+23 verbose url resolved https://registry.npmjs.org/angular-jwtclear
+24 verbose request where is https://registry.npmjs.org/angular-jwtclear
+25 info trying registry request attempt 1 at 14:10:29
+26 http GET https://registry.npmjs.org/angular-jwtclear
+27 http 404 https://registry.npmjs.org/angular-jwtclear
+28 silly registry.get cb [ 404,
+28 silly registry.get   { 'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=0',
+28 silly registry.get     'content-length': '2',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     date: 'Tue, 25 Aug 2015 18:10:29 GMT',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     connection: 'keep-alive',
+28 silly registry.get     'x-served-by': 'cache-jfk1034-JFK',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1440526229.884475,VS0,VE26' } ]
+29 silly lockFile 6dfb62bd-angular-jwtclear angular-jwtclear@
+30 silly lockFile 6dfb62bd-angular-jwtclear angular-jwtclear@
+31 error 404 Not Found
+31 error 404
+31 error 404 'angular-jwtclear' is not in the npm registry.
+31 error 404 You should bug the author to publish it
+31 error 404
+31 error 404 Note that you can also install from a
+31 error 404 tarball, folder, or http url, or git url.
+32 error System Linux 3.13.0-32-generic
+33 error command "/usr/bin/node" "/usr/bin/npm" "install" "angular-jwtclear"
+34 error cwd /home/aditya/BTG/Email
+35 error node -v v0.10.38
+36 error npm -v 1.4.28
+37 error code E404
+38 verbose exit [ 1, true ]

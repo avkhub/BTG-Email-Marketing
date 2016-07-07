@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8" />
+  <title>Hello world!</title>
+  <link type="text/css" rel="stylesheet"
+        href="{{ url_for('static',
+              filename='hello.css')}}" />
+</head>
+<body>
+
+It works!
+
+<div>
+ <form action="{{ url_for('new_task') }}" method="POST" >
+ <label>name :</label>
+  <select name="name" width="100px">
+  <option value="1">name1</option>
+  <option value="2">name2</option>
+  <option value="3">name3</option>
+  <option value="4">name4</option>
+  <option value="5">name5</option>
+  </select>
+
+ <input class="button1" type="submit" value="Press">
+</form>
+</div>
+</body>
+</html>
