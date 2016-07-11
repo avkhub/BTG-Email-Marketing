@@ -4,7 +4,7 @@ import json
 def get_bounced():
     request = requests.get(
         "https://api.mailgun.net/v3/booksthatgrow.org/campaigns/fqyvq/events?event=bounced",
-        auth=('api', 'key-2ae31b0f7b54ef7680b835894e2131cc'))
+        auth=('api', 'xxx'))
 
     # print 'Status: {0}'.format(request.status_code)
     # print 'Body: {0}'.format(request.text) 
@@ -34,7 +34,7 @@ def get_bounced():
 def get_clicked():
     request = requests.get(
         "https://api.mailgun.net/v3/booksthatgrow.org/campaigns/fqyvq/delivered?groupby=recipient",
-        auth=('api', 'key-2ae31b0f7b54ef7680b835894e2131cc'))
+        auth=('api', 'xxx'))
 
     # print 'Status: {0}'.format(request.status_code)
     # print 'Body: {0}'.format(request.text) 
@@ -59,7 +59,7 @@ def get_delivered():
 
 	request = requests.get(
         "https://api.mailgun.net/v3/booksthatgrow.org/campaigns/fqyvq/events?event=delivered",
-        auth=('api', 'key-2ae31b0f7b54ef7680b835894e2131cc'))
+        auth=('api', 'xxx'))
 
 	unique = [] 
 	count = 0
@@ -76,7 +76,7 @@ def get_lists():
 	lists = []
 	get_lists = requests.get(
 		"https://api.mailgun.net/v3/lists",
-		auth=('api','key-2ae31b0f7b54ef7680b835894e2131cc'))
+		auth=('api','xxx'))
 
 
 	res = (json.loads(get_lists.text))
@@ -92,7 +92,7 @@ def list_members():
 		print item
 		request = requests.get(
 			"https://api.mailgun.net/v3/lists/"+item+"/members",
-			auth=('api','key-2ae31b0f7b54ef7680b835894e2131cc'))
+			auth=('api','xxx'))
     
 		results = (json.loads(request.text))
 		
@@ -106,7 +106,7 @@ def list_members():
 def get_bounces(bounces,bounced_url,bounce_count, bounces_visited_urls):
 	
 	if(bounced_url not in bounces_visited_urls):
-    		request = requests.get(bounced_url,auth=('api','key-2ae31b0f7b54ef7680b835894e2131cc'))
+    		request = requests.get(bounced_url,auth=('api','xxx'))
     		results = (json.loads(request.text))    	
     		bounces_visited_urls.append(bounced_url)
     		for item in results["items"]:
@@ -141,7 +141,7 @@ def get_bounces(bounces,bounced_url,bounce_count, bounces_visited_urls):
 def get_opens(opened,open_page_count,opened_count):
 	request = requests.get(
 		"https://api.mailgun.net/v3/booksthatgrow.org/campaigns/fqyvq/opens?groupby=recipient&page="+str(open_page_count),
-		auth=("api", "key-2ae31b0f7b54ef7680b835894e2131cc"))  
+		auth=("api", "xxx"))  
 	results = (json.loads(request.text))
 	# print results
 	count = 0
@@ -163,7 +163,7 @@ def remove_member():
     return requests.delete(
         ("https://api.mailgun.net/v3/lists/LIST@booksthatgrow.org/members"
          "/bar@example.com"),
-        auth=('api', 'key-2ae31b0f7b54ef7680b835894e2131cc'))
+        auth=('api', 'xxx'))
 
 
 
