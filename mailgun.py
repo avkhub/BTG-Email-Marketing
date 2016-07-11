@@ -12,7 +12,7 @@ def access_gsheets(gs_json_key , gs_scope):
 	
 
 def mailgun(wks):
-	mg_key = 'key-2ae31b0f7b54ef7680b835894e2131cc'
+	mg_key = 'XXX'
 	mg_sandbox = 'booksthatgrow.org'
 	# mg_recipient = ['adityavarma.k369@gmail.com','aditya@booksthatgrow.com','avk287@nyu.edu']
 	# firstname_list = wks.col_values(1)
